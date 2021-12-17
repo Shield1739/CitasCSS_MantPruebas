@@ -8,10 +8,7 @@
 
 ### Archivo #1.
 Contiene la base de datos para correr la pagina (donde correra las pruebas del selenium)
-Ubicacion
-```sh
-/database_init/db_init.php
-```
+Ubicacion: `/database_init/db_init.php`
 Correr
 ```sh
 php db_init.php
@@ -19,10 +16,7 @@ php db_init.php
 
 #### Archivo #2.
 Contiene la base de datos para correr las pruebas unitarias
-Ubicacion
-```sh
-/www/tests/init.php
-```
+Ubicacion: `/www/tests/init.php`
 Correr
 ```sh
 php init.php
@@ -35,4 +29,8 @@ Algunos tests del selenium solamente se pueden correr 1 vez. Si por alguna razon
 
 Las pruebas unitarias utilizan transactions y rollbacks para no guardar sus cambios permanentemente en la base de datos asi que no habria necesidad de correr el segundo archivo mas de una vez.
 
+Para entrar a la pagina y correr las pruebas de selenium entre a `localhost:8000`
+
 Si desea confirmar que las bases de datos se crearon exitosamente, puede entrar al phpmyadmin en `localhost:8080` con el usuario `root` y la contraseña `sa`.
+
+Las pruebas unitarias estan ubicadas en `/tests/Shield1739/UTP/CitasCss/`.
